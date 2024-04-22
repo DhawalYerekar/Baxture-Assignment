@@ -1,0 +1,25 @@
+.userslist-container{
+    width: 100%;
+    height: max-content;
+    padding: 2rem;
+/* 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; */
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-rows:repeat(auto-fit, minmax(300px, 2fr)) ;
+    gap: 2rem;
+}
+
+@media (max-width : 1080px) {
+    .userslist-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+}
